@@ -11,7 +11,7 @@ public interface IntakeIO {
 
   @AutoLog
   class IntakeIOInputs {
-    public double velocityRadPerSec = 0.0;
+    public double velocitymps = 0.0;
 
     public double appliedVolts = 0.0;
 
@@ -21,4 +21,17 @@ public interface IntakeIO {
   default void updateInputs(IntakeIOInputs inputs) {}
 
   default void setVoltage(double volts) {}
+
+  default void setVelocity(double velocity) {}
+
+  default void setGains(Gains gains) {}
+
+  record Gains(
+      double kV,
+      double kA,
+      double kP,
+      double kI,
+      double kD,
+      double targetVelocitymps,
+      double accelerationmps) {}
 }

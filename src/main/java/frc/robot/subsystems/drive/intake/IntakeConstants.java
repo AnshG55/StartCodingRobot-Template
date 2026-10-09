@@ -22,6 +22,24 @@ public final class IntakeConstants {
 
   public static final double GEAR_RATIO = 1.0;
 
+  public static final double WHEEL_RADIUS = Units.inchesToMeters(2);
+
+  // Feed Forwards
+  public static final double kV = 0;
+  public static final double kA = 0;
+
+  // PID
+  public static final double kP = 0;
+  public static final double kI = 0;
+  public static final double kD = 0;
+
+  public static final double accelerationmps = 2;
+
+  public static final double targetVelocitymps = 1;
+
+  public static final IntakeIO.Gains GAINS =
+      new IntakeIO.Gains(kV, kA, kP, kI, kD, targetVelocitymps, accelerationmps);
+
   // In M/s
-  public static final double INTAKE_SPEED_Mps = 20;
+  public static final double INTAKE_SPEED_mps = 20;
 }
