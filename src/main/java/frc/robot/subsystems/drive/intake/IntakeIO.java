@@ -16,13 +16,17 @@ public interface IntakeIO {
     public double appliedVolts = 0.0;
 
     public double currentAmps = 0.0;
+
+    public double profilePos = 0.0;
+
+    public double realPos = 0.0;
   }
 
   default void updateInputs(IntakeIOInputs inputs) {}
 
   default void setVoltage(double volts) {}
 
-  default void setVelocity(double velocity) {}
+  default void setPosition(double pos) {}
 
   default void setGains(Gains gains) {}
 

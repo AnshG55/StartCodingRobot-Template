@@ -63,20 +63,10 @@ public class Intake extends SubsystemBase {
         });
   }
 
-  public Command setIntakeVelocity(double velocity) {
+  public Command setIntakePos(double pos) {
     return runEnd(
         () -> {
-          io.setVelocity(velocity);
-        },
-        () -> {
-          io.setVoltage(0.0);
-        });
-  }
-
-  public Command targetIntakeVelocity() {
-    return runEnd(
-        () -> {
-          io.setVelocity(IntakeConstants.GAINS.targetVelocitymps());
+          io.setPosition(pos);
         },
         () -> {
           io.setVoltage(0.0);
