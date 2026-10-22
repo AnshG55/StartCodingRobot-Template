@@ -1,0 +1,85 @@
+{
+  "NetworkTables": {
+    "transitory": {
+      "AdvantageKit": {
+        "Intake": {
+          "open": true
+        },
+        "RealOutputs": {
+          "Odometry": {
+            "Pose2d##v_/AdvantageKit/RealOutputs/Odometry/Robot": {
+              "open": false
+            }
+          }
+        },
+        "open": true
+      },
+      "SmartDashboard": {
+        "Shooter": {
+          "Acceleration (m": {
+            "open": false
+          },
+          "Target Acceleration (m": {
+            "open": false
+          },
+          "Target Velocity (m": {
+            "open": false
+          },
+          "open": false
+        },
+        "ShooterHood": {
+          "open": false
+        },
+        "VHopperNew": {
+          "Target Acceleration (m": {
+            "open": false
+          },
+          "Target Velocity (m": {
+            "open": false
+          },
+          "Velocity (m": {
+            "open": false
+          },
+          "open": false
+        },
+        "Vertical Hopper": {
+          "Acceleration (m": {
+            "open": false
+          },
+          "Profile Acceleration (m": {
+            "open": false
+          },
+          "Profile Velocity (m": {
+            "open": false
+          },
+          "Target Acceleration (m": {
+            "open": false
+          },
+          "Target Velocity (m": {
+            "open": false
+          },
+          "Velocity (m": {
+            "open": false
+          }
+        }
+      },
+      "Tuning": {
+        "Intake": {
+          "open": false
+        },
+        "open": false
+      }
+    },
+    "types": {
+      "/AdvantageKit/RealOutputs/Alerts": "Alerts",
+      "/AdvantageKit/RealOutputs/PathPlanner": "Alerts",
+      "/FMSInfo": "FMSInfo",
+      "/SmartDashboard/Alerts": "Alerts",
+      "/SmartDashboard/Auto Choices": "String Chooser",
+      "/SmartDashboard/PathPlanner": "Alerts"
+    }
+  },
+  "NetworkTables Settings": {
+    "serverTeam": "10.31.30.2"
+  }
+}

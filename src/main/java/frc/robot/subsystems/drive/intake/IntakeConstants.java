@@ -12,7 +12,7 @@ import edu.wpi.first.math.util.Units;
 public final class IntakeConstants {
   private IntakeConstants() {}
 
-  public static final int MOTOR_ID = 0;
+  public static final int MOTOR_ID = 20;
 
   public static final InvertedValue MOTOR_DIRECTION = InvertedValue.CounterClockwise_Positive;
 

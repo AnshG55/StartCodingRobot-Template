@@ -10,7 +10,7 @@ import org.littletonrobotics.junction.AutoLog;
 public interface IntakeIO {
 
   @AutoLog
-  class IntakeIOInputs {
+  public static class IntakeIOInputs {
     public double velocityRadPerSec = 0.0;
 
     public double appliedVolts = 0.0;
@@ -18,7 +18,7 @@ public interface IntakeIO {
     public double currentAmps = 0.0;
   }
 
-  default void updateInputs(IntakeIOInputs inputs) {}
+  public default void updateInputs(IntakeIOInputs inputs) {}
 
-  default void setVoltage(double volts) {}
+  public default void setVoltage(double volts) {}
 }

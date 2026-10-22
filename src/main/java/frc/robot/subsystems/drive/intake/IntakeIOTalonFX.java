@@ -4,6 +4,7 @@
 
 package frc.robot.subsystems.drive.intake;
 
+import com.ctre.phoenix6.BaseStatusSignal;
 import com.ctre.phoenix6.StatusSignal;
 import com.ctre.phoenix6.controls.VoltageOut;
 import com.ctre.phoenix6.hardware.TalonFX;
@@ -23,9 +24,11 @@ public class IntakeIOTalonFX implements IntakeIO {
   private final StatusSignal<Current> current;
 
   public IntakeIOTalonFX() {
-    velocity = intakeMotor.getVelocity(false);
-    appliedVolts = intakeMotor.getMotorVoltage(false);
-    current = intakeMotor.getStatorCurrent(false);
+    velocity = intakeMotor.getVelocity();
+    appliedVolts = intakeMotor.getMotorVoltage();
+    current = intakeMotor.getStatorCurrent();
+
+    BaseStatusSignal.setUpdateFrequencyForAll(50.0, velocity, appliedVolts, current);
   }
 
   @Override
